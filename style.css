@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Condesed', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+video, .img-tesla {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* DEIXANDO ATRAS DE TODOS*/
+    object-fit: cover; /*COBRIR TODA A TELA*/
+    filter: brightness(40%); /*ESCURECENDO IMGAGEM*/
+}
+
+
+.logo {
+    filter: brightness(100);
+    position: fixed; /* FIXANDO A LOGO, DEIXANDO-A POR CIMA DO VIDEO*/
+    width: 120px;
+}
+
+.item {
+    position: relative;
+    width: 100vw;   /*100vw = a tela inteira (largura)*/
+    height: 100vh; /*100vh = a tela inteira(altura)*/
+    
+    display: flex; /*HABILITA ALGUMAS PROPRIEDADES CSS*/
+    justify-content: space-between;/* cria espaçamento entre os itens*/
+    flex-direction: column; /*direcionamento dos itens, coluna no caso*/
+    scroll-snap-align: start;
+    
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.titulo-x {
+    color: rgba(0, 0, 0, 0.618);
+}
+
+.sub-titulo-x {
+    color: rgba(0, 0, 0, 0.538);
+}
+
+.sub-titulo {
+    color: white;
+}
+
+.info-carro {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.rodape {
+    text-align: center;
+    color: aliceblue;
+    font-size: 12px;
+    margin-top: 8%;
+}
+
+button {
+    border-radius: 12px; /*arredonda o botao*/
+    border: none; /*tira a borda do botao*/
+    background-color: rgb(100, 92, 92);
+    color: rgb(247, 246, 246);
+    padding: 5px 60px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.btn-comprar {
+    background-color: rgba(0, 0, 0, 0.907);
+    color: white;
+}
+
+.btn-td {
+    background-color: rgba(240, 255, 255, 0.97);
+    color: black;
+}
+
+.formulario {
+    position: fixed;
+    top: 3%;
+    width: 600px;
+    height: 100%;
+    z-index: 3;
+    left: -50%;
+    transition: 1.5s;
+}
